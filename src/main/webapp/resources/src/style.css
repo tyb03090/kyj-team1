@@ -1,0 +1,204 @@
+body {
+    background-color: #2f335d;
+    color: rgba(255, 255, 255, 0.7);
+    font-family: 'Do Hyeon', sans-serif;
+    padding-top: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    margin: 0;
+}
+
+.container {
+    width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+
+    animation: fadein 1s;
+    -webkit-animation: fadein 1s;
+}
+
+h1#title {
+    font-size: 4rem;
+    font-weight: bold;
+    margin: 0;
+    color: #fff;
+    display: block;
+    float: left;
+
+    animation: fadein 1s;
+    -webkit-animation: fadein 1s;
+}
+
+div#best-score-container {
+    position: relative;
+    float: right;
+    background-color: #8b85bb;
+    color: rgba(255, 255, 255, 0.69);
+    height: 25px;
+    padding: 15px 20px 30px;
+    border-radius: 0.3rem;
+    margin-top: 10px;
+    text-align: center;
+    margin-right: 10px;
+}
+
+div#best-score {
+    font-weight: bold;
+    font-size: 1.4rem;
+    color: #fff;
+}
+
+div#score-container {
+    position: relative;
+    float: right;
+    background-color: #8b85bb;
+    color: rgba(255, 255, 255, 0.69);
+    height: 25px;
+    padding: 15px 20px 30px;
+    border-radius: 0.3rem;
+    margin-top: 10px;
+    text-align: center;
+
+    animation: fadein 1s;
+    -webkit-animation: fadein 1s;
+}
+
+div#score {
+    font-weight: bold;
+    font-size: 1.4rem;
+    color: #fff;
+}
+
+p#instructions {
+    position: absolute;
+    margin-top: 100px;
+    float: left;
+
+    animation: fadein 1s;
+    -webkit-animation: fadein 1s;
+}
+
+#game-container-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-top: 140px; /* 변경 전: 100px */
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+
+    animation: fadein 1s;
+    -webkit-animation: fadein 1s;
+}
+
+#game-container-4 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-top: 140px; /* 변경 전: 100px */
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+
+    animation: fadein 1s;
+    -webkit-animation: fadein 1s;
+}
+
+#game-container-5 {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    margin-top: 140px; /* 변경 전: 100px */
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+
+    animation: fadein 1s;
+    -webkit-animation: fadein 1s;
+}
+
+.tile3{
+    width: 142px;
+    height: 142px;
+    border-radius: 0.6rem;
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+.tile4 {
+    width: 105px;
+    height: 105px;
+    border-radius: 0.5rem;
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+.tile5{
+    width: 82px;
+    height: 82px;
+    border-radius: 0.4rem;
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+.tile-0 {
+    background-color: #d9e1ff;
+    color: #333;
+}
+
+.tile-2 {
+    background-color: #f4eeff;
+    color: #9186c6;
+}
+
+.tile-4 {
+    background-color: #ccc3f4;
+    color: #4a3e80;
+}
+
+.tile-8 {
+    background-color: #B2DFDB;
+    color: #333;
+}
+
+.tile-16 {
+    background-color: #80CBC4;
+    color: #333;
+}
+
+.tile-32 {
+    background-color: #4DB6AC;
+    color: #fff;
+}
+
+/* 다른 숫자에 대한 클래스도 여기에 추가 */
+
+span {
+    font-weight: bold;
+    color: #ffffff;
+}
+
+@keyframes fadein {
+
+    /* Safari and Chrome */
+    from {
+        opacity: 0;
+        transform: translate3d(0, 10%, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateZ(0);
+    }
+}
